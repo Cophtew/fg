@@ -23,20 +23,70 @@
         a:hover {
             text-decoration: underline; /* add underline on hover */
         }
+        select, input[type="submit"] {
+            margin-top: 10px; /* add margin for spacing */
+            padding: 5px; /* add padding for better appearance */
+            border-radius: 5px; /* smooth borders */
+            border: none; /* remove border */
+            background-color: #00adb5; /* teal background for dropdown and button */
+            color: white; /* white text */
+            cursor: pointer; /* change cursor to pointer on hover */
+        }
+        select:hover, input[type="submit"]:hover {
+            background-color: #007580; /* darker teal on hover */
+        }
+        .drawer {
+            position: fixed; /* fixed position */
+            top: 20px; /* adjust top position */
+            left: 20px; /* adjust left position */
+            z-index: 1000; /* higher z-index for visibility */
+            background-color: #11222a; /* dark blue background for drawer */
+            border-radius: 10px; /* smooth borders */
+            padding: 10px; /* add padding for better spacing */
+        }
+        .drawer-item {
+            margin-bottom: 10px; /* add margin between items */
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to Frieren Grimoires</h1>
-    <h4>(I know, Really should have go with Drive free files but... its boring</h4>
-    <p>Where magic meets hilarity! This is not your typical grimoire site. Here, we offer spells to summon pizza, turn water into coffee, and charm your phone into never running out of battery!</p>
-    
-    <h2>Sample Spells:</h2>
-    <ul>
-        <li><a href="spells/pizza-summoning.html">Summon Pizza</a></li>
-        <li><a href="spells/coffee-transformation.html">Turn Water into Coffee</a></li>
-        <li><a href="spells/eternal-battery-charm.html">Charm for Eternal Phone Battery</a></li>
-    </ul>
+    <div class="drawer">
+        <h2>Menu</h2>
+        <div class="drawer-item">
+            <h3>Manga</h3>
+            <select>
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <!-- Add more genres as needed -->
+            </select>
+        </div>
+        <div class="drawer-item">
+            <h3>Anime</h3>
+            <select>
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <!-- Add more genres as needed -->
+            </select>
+        </div>
+        <div class="drawer-item">
+            <h3>Cartoons</h3>
+            <select>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="sci-fi">Science Fiction</option>
+                <!-- Add more genres as needed -->
+            </select>
+        </div>
+    </div>
 
-    <p>Disclaimer: Results may vary. We take no responsibility for accidentally summoning pineapples on your pizza or turning your coffee into a pufferfish.</p>
+    <h1>Welcome to Frieren Grimoires</h1>
+    <p>Where magic meets hilarity! This is not your typical grimoire site. Here, we offer spells to summon pizza, turn water into coffee, and charm your phone into never running out of battery!</p>
+
+    <!-- Long list of content can be added here -->
 </body>
 </html>
