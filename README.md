@@ -1,5 +1,7 @@
 # fg Website
 
+Whether is free materials for viewing, I'm not sure. I'm listening to the owners.😕
+
 # I don't think I'll write anything... just 😧
 
 # Step. 1
