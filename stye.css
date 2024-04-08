@@ -1,0 +1,50 @@
+body {
+    background-color: #000; /* black background */
+    color: white; /* white text */
+    font-family: Arial, sans-serif; /* fallback font */
+    padding: 20px; /* add padding for better readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 50px; /* adjust size of logo */
+    margin-right: 10px; /* add spacing between logo and text */
+}
+
+nav {
+    margin-top: 20px; /* add margin between header and navigation */
+}
+
+nav select {
+    padding: 5px; /* add padding for better appearance */
+    border-radius: 5px; /* smooth borders */
+    border: none; /* remove border */
+    background-color: #00adb5; /* teal background for dropdown */
+    color: white; /* white text */
+    cursor: pointer; /* change cursor to pointer on hover */
+}
+
+nav select:hover {
+    background-color: #007580; /* darker teal on hover */
+}
+
+.just-updated, .random-links {
+    background-color: #11222a; /* dark blue background */
+    border-radius: 10px; /* smooth borders */
+    padding: 10px; /* add padding for better spacing */
+    width: 80%; /* set width for better alignment */
+    max-width: 600px; /* set maximum width for responsiveness */
+    margin-top: 20px; /* add margin between sections */
+}
+
+.random-links a {
+    display: block; /* make links block elements */
+    margin-bottom: 5px; /* add margin between links */
+}
