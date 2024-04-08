@@ -6,15 +6,21 @@
     <title>Frieren Grimoires</title>
     <style>
         body {
-            background-color: #1a1a2e; /* deep blue background */
+            background-color: #000; /* black background */
             color: white; /* white text */
             font-family: Arial, sans-serif; /* fallback font */
             padding: 20px; /* add padding for better readability */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         h1, h2, p, ul {
             border-radius: 10px; /* smooth borders */
             padding: 10px; /* add padding for better spacing */
             background-color: #11222a; /* dark blue background for text blocks */
+            margin-bottom: 20px; /* add margin between blocks */
+            width: 80%; /* set width for better alignment */
+            max-width: 600px; /* set maximum width for responsiveness */
         }
         a {
             color: #00adb5; /* teal color for links */
@@ -23,70 +29,66 @@
         a:hover {
             text-decoration: underline; /* add underline on hover */
         }
-        select, input[type="submit"] {
-            margin-top: 10px; /* add margin for spacing */
+        select {
             padding: 5px; /* add padding for better appearance */
             border-radius: 5px; /* smooth borders */
             border: none; /* remove border */
-            background-color: #00adb5; /* teal background for dropdown and button */
+            background-color: #00adb5; /* teal background for dropdown */
             color: white; /* white text */
             cursor: pointer; /* change cursor to pointer on hover */
         }
-        select:hover, input[type="submit"]:hover {
+        select:hover {
             background-color: #007580; /* darker teal on hover */
         }
-        .drawer {
-            position: fixed; /* fixed position */
-            top: 20px; /* adjust top position */
-            left: 20px; /* adjust left position */
-            z-index: 1000; /* higher z-index for visibility */
-            background-color: #11222a; /* dark blue background for drawer */
+        .just-updated {
+            background-color: #11222a; /* dark blue background */
             border-radius: 10px; /* smooth borders */
             padding: 10px; /* add padding for better spacing */
+            width: 80%; /* set width for better alignment */
+            max-width: 600px; /* set maximum width for responsiveness */
         }
-        .drawer-item {
-            margin-bottom: 10px; /* add margin between items */
+        .random-links {
+            background-color: #11222a; /* dark blue background */
+            border-radius: 10px; /* smooth borders */
+            padding: 10px; /* add padding for better spacing */
+            width: 80%; /* set width for better alignment */
+            max-width: 600px; /* set maximum width for responsiveness */
+        }
+        .random-links a {
+            display: block; /* make links block elements */
+            margin-bottom: 5px; /* add margin between links */
         }
     </style>
 </head>
 <body>
-    <div class="drawer">
-        <h2>Menu</h2>
-        <div class="drawer-item">
-            <h3>Manga</h3>
-            <select>
-                <option value="action">Action</option>
-                <option value="adventure">Adventure</option>
-                <option value="comedy">Comedy</option>
-                <option value="drama">Drama</option>
-                <!-- Add more genres as needed -->
-            </select>
-        </div>
-        <div class="drawer-item">
-            <h3>Anime</h3>
-            <select>
-                <option value="action">Action</option>
-                <option value="adventure">Adventure</option>
-                <option value="comedy">Comedy</option>
-                <option value="drama">Drama</option>
-                <!-- Add more genres as needed -->
-            </select>
-        </div>
-        <div class="drawer-item">
-            <h3>Cartoons</h3>
-            <select>
-                <option value="action">Action</option>
-                <option value="comedy">Comedy</option>
-                <option value="fantasy">Fantasy</option>
-                <option value="sci-fi">Science Fiction</option>
-                <!-- Add more genres as needed -->
-            </select>
-        </div>
+    <h1>Welcome to Frieren Grimoires</h1>
+    <form>
+        <select name="category">
+            <option value="manga">Manga</option>
+            <option value="anime">Anime</option>
+            <option value="cartoons">Cartoons</option>
+            <option value="western">Western</option>
+        </select>
+        <select name="genre">
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <!-- Add more genres as needed -->
+        </select>
+    </form>
+
+    <div class="just-updated">
+        <h2>Just Updated</h2>
+        <!-- Add updated content here -->
     </div>
 
-    <h1>Welcome to Frieren Grimoires</h1>
-    <p>Where magic meets hilarity! This is not your typical grimoire site. Here, we offer spells to summon pizza, turn water into coffee, and charm your phone into never running out of battery!</p>
-
-    <!-- Long list of content can be added here -->
+    <div class="random-links">
+        <h2>Random Links</h2>
+        <a href="#">Link 1 - Description</a>
+        <a href="#">Link 2 - Description</a>
+        <a href="#">Link 3 - Description</a>
+        <!-- Add more random links as needed -->
+    </div>
 </body>
 </html>
