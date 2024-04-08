@@ -4,79 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frieren Grimoires</title>
-    <style>
-        body {
-            background-color: #000; /* black background */
-            color: white; /* white text */
-            font-family: Arial, sans-serif; /* fallback font */
-            padding: 20px; /* add padding for better readability */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        h1, h2, p, ul {
-            border-radius: 10px; /* smooth borders */
-            padding: 10px; /* add padding for better spacing */
-            background-color: #11222a; /* dark blue background for text blocks */
-            margin-bottom: 20px; /* add margin between blocks */
-            width: 80%; /* set width for better alignment */
-            max-width: 600px; /* set maximum width for responsiveness */
-        }
-        a {
-            color: #00adb5; /* teal color for links */
-            text-decoration: none; /* remove default underline */
-        }
-        a:hover {
-            text-decoration: underline; /* add underline on hover */
-        }
-        select {
-            padding: 5px; /* add padding for better appearance */
-            border-radius: 5px; /* smooth borders */
-            border: none; /* remove border */
-            background-color: #00adb5; /* teal background for dropdown */
-            color: white; /* white text */
-            cursor: pointer; /* change cursor to pointer on hover */
-        }
-        select:hover {
-            background-color: #007580; /* darker teal on hover */
-        }
-        .just-updated {
-            background-color: #11222a; /* dark blue background */
-            border-radius: 10px; /* smooth borders */
-            padding: 10px; /* add padding for better spacing */
-            width: 80%; /* set width for better alignment */
-            max-width: 600px; /* set maximum width for responsiveness */
-        }
-        .random-links {
-            background-color: #11222a; /* dark blue background */
-            border-radius: 10px; /* smooth borders */
-            padding: 10px; /* add padding for better spacing */
-            width: 80%; /* set width for better alignment */
-            max-width: 600px; /* set maximum width for responsiveness */
-        }
-        .random-links a {
-            display: block; /* make links block elements */
-            margin-bottom: 5px; /* add margin between links */
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Frieren Grimoires</h1>
-    <form>
-        <select name="category">
-            <option value="manga">Manga</option>
-            <option value="anime">Anime</option>
-            <option value="cartoons">Cartoons</option>
-            <option value="western">Western</option>
-        </select>
-        <select name="genre">
-            <option value="action">Action</option>
-            <option value="adventure">Adventure</option>
-            <option value="comedy">Comedy</option>
-            <option value="drama">Drama</option>
-            <!-- Add more genres as needed -->
-        </select>
-    </form>
+    <header>
+        <img src="logo.png" alt="Frieren Grimoires Logo">
+        <h1>Welcome to Frieren Grimoires</h1>
+    </header>
+
+    <nav>
+        <form>
+            <select name="category">
+                <option value="manga">Manga</option>
+                <option value="anime">Anime</option>
+                <option value="cartoons">Cartoons</option>
+                <option value="western">Western</option>
+            </select>
+            <select name="genre">
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <!-- Add more genres as needed -->
+            </select>
+        </form>
+    </nav>
 
     <div class="just-updated">
         <h2>Just Updated</h2>
